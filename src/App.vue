@@ -17,7 +17,6 @@ export default {
   @import './assets/scss/reset.scss';
 
   html,body{height:100%;}
-  body{background:#282828;}
   a:hover{
     text-decoration: none;
   }
