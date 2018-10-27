@@ -1,7 +1,7 @@
 <template>
     <div class="indentWrap">
         <div class="topTit">
-            <span>&lt;</span>
+            <span @click="routergo">&lt;</span>
             <h1>我的订单</h1>
         </div>
         <div class="buttonW">
@@ -48,6 +48,9 @@ export default {
     methods:{
         btnSpan(code){
             this.currentCode = code;
+        },
+        routergo(){
+            this.$router.go(-1);
         }
     }
 }

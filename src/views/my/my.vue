@@ -16,7 +16,7 @@
         </div>
         <div class="indentCollect-wrap">
             <div class="leftW">
-                <router-link class="iconfont icon-wodedingdan" to=""></router-link>
+                <router-link class="iconfont icon-wodedingdan" to="/#/my/indent"></router-link>
                 <p>我的订单</p>
             </div>
             <div class="rightW">
@@ -34,7 +34,9 @@
                 <div class="gtW">&gt;</div>
             </div>
         </div>
-        <router-view></router-view>
+        <transition name="slideX">
+            <router-view></router-view>
+        </transition>
     </div>
 </template>
 <script>
@@ -100,6 +102,15 @@ export default {
                 p{font-size:24px;color:#2b2b2b;flex:1;}
                 .gtW{width:14px;font-size:18px;color:#a3a3a3;}
             }
+        }
+        .slideX-enter,.slideX-leave-to{
+            transform:translateX(100vw);
+        }
+        .slideX-enter-active,.slideX-leave-active{
+            transition: all 0.5s;
+        }
+        .slideX-enter-to,.slideX-leave{
+            transform:translateX(0);
         }
     }
 </style>

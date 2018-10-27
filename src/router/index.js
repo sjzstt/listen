@@ -9,13 +9,18 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'indent',
-      component: Indent
+      redirect:'/my'
     },
     {
       path: '/my',
       name: 'my',
-      component: My
+      component: My,
+      children:[
+        {
+          path:'indent',
+          component:Indent
+        }
+      ]
     },
   ]
 })
