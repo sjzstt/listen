@@ -12,23 +12,12 @@ export default {
 </script>
 
 <style>
-*{
-  margin:0;
-  padding:0;
-}
-ul{
-  list-style:none;
-}
-a,img{
-  display:block;
-  text-decoration: none;
-}
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+/* 雅虎的样式从置，以及移除隐藏显示省略号，万能清浮动等base */
+  @import './assets/scss/base.scss';
+  @import './assets/scss/reset.scss';
+
+  html,body{height:100%;}
+  a:hover{
+    text-decoration: none;
+  }
 </style>
