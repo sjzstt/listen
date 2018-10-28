@@ -15,12 +15,12 @@
             </div>
         </div>
         <div class="indentCollect-wrap">
-            <div class="leftW">
-                <router-link class="iconfont icon-wodedingdan" to="/#/my/indent"></router-link>
+            <div class="leftW" @click="leftWrouter">
+                <i class="iconfont icon-wodedingdan"></i>
                 <p>我的订单</p>
             </div>
             <div class="rightW">
-                <router-link class="iconfont icon-wodeshoucang" to=""></router-link>
+                <i class="iconfont icon-wodeshoucang"></i>
                 <p>我的收藏</p>
             </div>
         </div>
@@ -56,6 +56,9 @@ export default {
     methods:{
         clickTz(type){
 
+        },
+        leftWrouter(){
+            this.$router.push('my/indent');
         }
     }
 }
