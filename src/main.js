@@ -5,7 +5,9 @@ import App from './App'
 import router from './router'
 import axios from 'axios'
 Vue.config.productionTip = false
-
+import scroll from './components/base/scroll/scroll'
+// console.log(scroll)
+Vue.component(scroll.name,scroll);
 import './assets/font/iconfont.css'
 Vue.prototype.$axios=axios
 /* eslint-disable no-new */
