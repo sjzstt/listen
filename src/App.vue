@@ -1,14 +1,20 @@
 <template>
   <div id="app">
     <!-- <img src="./assets/logo.png"> -->
+    <!-- <balance></balance> -->
     <router-view/>
+    
   </div>
 </template>
 
 <script>
-export default {
-  name: 'App'
-}
+// import Balance from './views/my/balance/balance'
+// export default {
+//   name: 'App',
+//   component:{
+//     Balance
+//   }
+// }
 </script>
 
 <style>
@@ -17,7 +23,7 @@ export default {
   @import './assets/scss/reset.scss';
 
   html,body{height:100%;}
-  body{background:#282828;}
+ 
   a:hover{
     text-decoration: none;
   }
